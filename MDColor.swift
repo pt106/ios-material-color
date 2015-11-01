@@ -22,10 +22,10 @@ class MDColor {
         }
     }
     
-    static func getUIColorFromHex(hexStr: String) -> UIColor {
+    static func getUIColorFromHex(hexString: String) -> UIColor {
         var returnColorCode = "FFFFFF"
         
-        if let job = mcolorToHex[hexStr] {
+        if let job = mcolorToHex[hexString] {
             returnColorCode = job
         }
         
