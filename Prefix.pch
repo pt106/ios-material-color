@@ -1,0 +1,321 @@
+//
+//  Prefix header
+//
+//  Created by Takahiro Aya on 2015/11/01.
+//  Copyright © 2015年 Takahiro Aya. All rights reserved.
+//
+
+// Red
+#define MC_RED_50 UIColorFromRGBWithAlpha(0xFFEBEE, 1.0);
+#define MC_RED_100 UIColorFromRGBWithAlpha(0xFFCDD2, 1.0);
+#define MC_RED_200 UIColorFromRGBWithAlpha(0xEF9A9A, 1.0);
+#define MC_RED_300 UIColorFromRGBWithAlpha(0xE57373, 1.0);
+#define MC_RED_400 UIColorFromRGBWithAlpha(0xEF5350, 1.0);
+#define MC_RED_500 UIColorFromRGBWithAlpha(0xF44336, 1.0);
+#define MC_RED_600 UIColorFromRGBWithAlpha(0xE53935, 1.0);
+#define MC_RED_700 UIColorFromRGBWithAlpha(0xD32F2F, 1.0);
+#define MC_RED_800 UIColorFromRGBWithAlpha(0xC62828, 1.0);
+#define MC_RED_900 UIColorFromRGBWithAlpha(0xB71C1C, 1.0);
+
+#define MC_RED_A100 UIColorFromRGBWithAlpha(0xFF8A80, 1.0);
+#define MC_RED_A200 UIColorFromRGBWithAlpha(0xFF5252, 1.0);
+#define MC_RED_A400 UIColorFromRGBWithAlpha(0xFF1744, 1.0);
+#define MC_RED_A700 UIColorFromRGBWithAlpha(0xD50000, 1.0);
+
+// Pink
+#define MC_PINK_50 UIColorFromRGBWithAlpha(0xFCE4EC, 1.0);
+#define MC_PINK_100 UIColorFromRGBWithAlpha(0xF8BBD0, 1.0);
+#define MC_PINK_200 UIColorFromRGBWithAlpha(0xF48FB1, 1.0);
+#define MC_PINK_300 UIColorFromRGBWithAlpha(0xF06292, 1.0);
+#define MC_PINK_400 UIColorFromRGBWithAlpha(0xEC407A, 1.0);
+#define MC_PINK_500 UIColorFromRGBWithAlpha(0xE91E63, 1.0);
+#define MC_PINK_600 UIColorFromRGBWithAlpha(0xD81B60, 1.0);
+#define MC_PINK_700 UIColorFromRGBWithAlpha(0xC2185B, 1.0);
+#define MC_PINK_800 UIColorFromRGBWithAlpha(0xAD1457, 1.0);
+#define MC_PINK_900 UIColorFromRGBWithAlpha(0x880E4F, 1.0);
+
+#define MC_PINK_A100 UIColorFromRGBWithAlpha(0xFF80AB, 1.0);
+#define MC_PINK_A200 UIColorFromRGBWithAlpha(0xFF4081, 1.0);
+#define MC_PINK_A400 UIColorFromRGBWithAlpha(0xF50057, 1.0);
+#define MC_PINK_A700 UIColorFromRGBWithAlpha(0xC51162, 1.0);
+
+// Purple
+#define MC_PURPLE_50 UIColorFromRGBWithAlpha(0xF3E5F5, 1.0);
+#define MC_PURPLE_100 UIColorFromRGBWithAlpha(0xE1BEE7, 1.0);
+#define MC_PURPLE_200 UIColorFromRGBWithAlpha(0xCE93D8, 1.0);
+#define MC_PURPLE_300 UIColorFromRGBWithAlpha(0xBA68C8, 1.0);
+#define MC_PURPLE_400 UIColorFromRGBWithAlpha(0xAB47BC, 1.0);
+#define MC_PURPLE_500 UIColorFromRGBWithAlpha(0x9C27B0, 1.0);
+#define MC_PURPLE_600 UIColorFromRGBWithAlpha(0x8E24AA, 1.0);
+#define MC_PURPLE_700 UIColorFromRGBWithAlpha(0x7B1FA2, 1.0);
+#define MC_PURPLE_800 UIColorFromRGBWithAlpha(0x6A1B9A, 1.0);
+#define MC_PURPLE_900 UIColorFromRGBWithAlpha(0x4A148C, 1.0);
+
+#define MC_PURPLE_A100 UIColorFromRGBWithAlpha(0xEA80FC, 1.0);
+#define MC_PURPLE_A200 UIColorFromRGBWithAlpha(0xE040FB, 1.0);
+#define MC_PURPLE_A400 UIColorFromRGBWithAlpha(0xD500F9, 1.0);
+#define MC_PURPLE_A700 UIColorFromRGBWithAlpha(0xAA00FF, 1.0);
+
+// Deep Purple
+#define MC_DEEP_PURPLE_50 UIColorFromRGBWithAlpha(0xEDE7F6, 1.0);
+#define MC_DEEP_PURPLE_100 UIColorFromRGBWithAlpha(0xD1C4E9, 1.0);
+#define MC_DEEP_PURPLE_200 UIColorFromRGBWithAlpha(0xB39DDB, 1.0);
+#define MC_DEEP_PURPLE_300 UIColorFromRGBWithAlpha(0x9575CD, 1.0);
+#define MC_DEEP_PURPLE_400 UIColorFromRGBWithAlpha(0x7E57C2, 1.0);
+#define MC_DEEP_PURPLE_500 UIColorFromRGBWithAlpha(0x673AB7, 1.0);
+#define MC_DEEP_PURPLE_600 UIColorFromRGBWithAlpha(0x5E35B1, 1.0);
+#define MC_DEEP_PURPLE_700 UIColorFromRGBWithAlpha(0x512DA8, 1.0);
+#define MC_DEEP_PURPLE_800 UIColorFromRGBWithAlpha(0x4527A0, 1.0);
+#define MC_DEEP_PURPLE_900 UIColorFromRGBWithAlpha(0x311B92, 1.0);
+
+#define MC_DEEP_PURPLE_A100 UIColorFromRGBWithAlpha(0xB388FF, 1.0);
+#define MC_DEEP_PURPLE_A200 UIColorFromRGBWithAlpha(0x7C4DFF, 1.0);
+#define MC_DEEP_PURPLE_A400 UIColorFromRGBWithAlpha(0x651FFF, 1.0);
+#define MC_DEEP_PURPLE_A700 UIColorFromRGBWithAlpha(0x6200EA, 1.0);
+
+// Indigo
+#define MC_INDIGO_50 UIColorFromRGBWithAlpha(0xE8EAF6, 1.0);
+#define MC_INDIGO_100 UIColorFromRGBWithAlpha(0xC5CAE9, 1.0);
+#define MC_INDIGO_200 UIColorFromRGBWithAlpha(0x9FA8DA, 1.0);
+#define MC_INDIGO_300 UIColorFromRGBWithAlpha(0x7986CB, 1.0);
+#define MC_INDIGO_400 UIColorFromRGBWithAlpha(0x5C6BC0, 1.0);
+#define MC_INDIGO_500 UIColorFromRGBWithAlpha(0x3F51B5, 1.0);
+#define MC_INDIGO_600 UIColorFromRGBWithAlpha(0x3949AB, 1.0);
+#define MC_INDIGO_700 UIColorFromRGBWithAlpha(0x303F9F, 1.0);
+#define MC_INDIGO_800 UIColorFromRGBWithAlpha(0x283593, 1.0);
+#define MC_INDIGO_900 UIColorFromRGBWithAlpha(0x1A237E, 1.0);
+
+#define MC_INDIGO_A100 UIColorFromRGBWithAlpha(0x8C9EFF, 1.0);
+#define MC_INDIGO_A200 UIColorFromRGBWithAlpha(0x536DFE, 1.0);
+#define MC_INDIGO_A400 UIColorFromRGBWithAlpha(0x3D5AFE, 1.0);
+#define MC_INDIGO_A700 UIColorFromRGBWithAlpha(0x304FFE, 1.0);
+
+// Blue
+#define MC_BLUE_50 UIColorFromRGBWithAlpha(0xE3F2FD, 1.0);
+#define MC_BLUE_100 UIColorFromRGBWithAlpha(0xBBDEFB, 1.0);
+#define MC_BLUE_200 UIColorFromRGBWithAlpha(0x90CAF9, 1.0);
+#define MC_BLUE_300 UIColorFromRGBWithAlpha(0x64B5F6, 1.0);
+#define MC_BLUE_400 UIColorFromRGBWithAlpha(0x42A5F5, 1.0);
+#define MC_BLUE_500 UIColorFromRGBWithAlpha(0x2196F3, 1.0);
+#define MC_BLUE_600 UIColorFromRGBWithAlpha(0x1E88E5, 1.0);
+#define MC_BLUE_700 UIColorFromRGBWithAlpha(0x1976D2, 1.0);
+#define MC_BLUE_800 UIColorFromRGBWithAlpha(0x1565C0, 1.0);
+#define MC_BLUE_900 UIColorFromRGBWithAlpha(0x0D47A1, 1.0);
+
+#define MC_BLUE_A100 UIColorFromRGBWithAlpha(0x82B1FF, 1.0);
+#define MC_BLUE_A200 UIColorFromRGBWithAlpha(0x448AFF, 1.0);
+#define MC_BLUE_A400 UIColorFromRGBWithAlpha(0x2979FF, 1.0);
+#define MC_BLUE_A700 UIColorFromRGBWithAlpha(0x2962FF, 1.0);
+
+// Light Blue
+#define MC_LIGHT_BLUE_50 UIColorFromRGBWithAlpha(0xE1F5FE, 1.0);
+#define MC_LIGHT_BLUE_100 UIColorFromRGBWithAlpha(0xB3E5FC, 1.0);
+#define MC_LIGHT_BLUE_200 UIColorFromRGBWithAlpha(0x81D4FA, 1.0);
+#define MC_LIGHT_BLUE_300 UIColorFromRGBWithAlpha(0x4FC3F7, 1.0);
+#define MC_LIGHT_BLUE_400 UIColorFromRGBWithAlpha(0x29B6F6, 1.0);
+#define MC_LIGHT_BLUE_500 UIColorFromRGBWithAlpha(0x03A9F4, 1.0);
+#define MC_LIGHT_BLUE_600 UIColorFromRGBWithAlpha(0x039BE5, 1.0);
+#define MC_LIGHT_BLUE_700 UIColorFromRGBWithAlpha(0x0288D1, 1.0);
+#define MC_LIGHT_BLUE_800 UIColorFromRGBWithAlpha(0x0277BD, 1.0);
+#define MC_LIGHT_BLUE_900 UIColorFromRGBWithAlpha(0x01579B, 1.0);
+
+#define MC_LIGHT_BLUE_A100 UIColorFromRGBWithAlpha(0x80D8FF, 1.0);
+#define MC_LIGHT_BLUE_A200 UIColorFromRGBWithAlpha(0x40C4FF, 1.0);
+#define MC_LIGHT_BLUE_A400 UIColorFromRGBWithAlpha(0x00B0FF, 1.0);
+#define MC_LIGHT_BLUE_A700 UIColorFromRGBWithAlpha(0x0091EA, 1.0);
+
+// Cyan
+#define MC_CYAN_50 UIColorFromRGBWithAlpha(0xE0F7FA, 1.0);
+#define MC_CYAN_100 UIColorFromRGBWithAlpha(0xB2EBF2, 1.0);
+#define MC_CYAN_200 UIColorFromRGBWithAlpha(0x80DEEA, 1.0);
+#define MC_CYAN_300 UIColorFromRGBWithAlpha(0x4DD0E1, 1.0);
+#define MC_CYAN_400 UIColorFromRGBWithAlpha(0x26C6DA, 1.0);
+#define MC_CYAN_500 UIColorFromRGBWithAlpha(0x00BCD4, 1.0);
+#define MC_CYAN_600 UIColorFromRGBWithAlpha(0x00ACC1, 1.0);
+#define MC_CYAN_700 UIColorFromRGBWithAlpha(0x0097A7, 1.0);
+#define MC_CYAN_800 UIColorFromRGBWithAlpha(0x00838F, 1.0);
+#define MC_CYAN_900 UIColorFromRGBWithAlpha(0x006064, 1.0);
+
+#define MC_CYAN_A100 UIColorFromRGBWithAlpha(0x84FFFF, 1.0);
+#define MC_CYAN_A200 UIColorFromRGBWithAlpha(0x18FFFF, 1.0);
+#define MC_CYAN_A400 UIColorFromRGBWithAlpha(0x00E5FF, 1.0);
+#define MC_CYAN_A700 UIColorFromRGBWithAlpha(0x00B8D4, 1.0);
+
+// Teal
+#define MC_TEAL_50 UIColorFromRGBWithAlpha(0xE0F2F1, 1.0);
+#define MC_TEAL_100 UIColorFromRGBWithAlpha(0xB2DFDB, 1.0);
+#define MC_TEAL_200 UIColorFromRGBWithAlpha(0x80CBC4, 1.0);
+#define MC_TEAL_300 UIColorFromRGBWithAlpha(0x4DB6AC, 1.0);
+#define MC_TEAL_400 UIColorFromRGBWithAlpha(0x26A69A, 1.0);
+#define MC_TEAL_500 UIColorFromRGBWithAlpha(0x009688, 1.0);
+#define MC_TEAL_600 UIColorFromRGBWithAlpha(0x00897B, 1.0);
+#define MC_TEAL_700 UIColorFromRGBWithAlpha(0x00796B, 1.0);
+#define MC_TEAL_800 UIColorFromRGBWithAlpha(0x00695C, 1.0);
+#define MC_TEAL_900 UIColorFromRGBWithAlpha(0x004D40, 1.0);
+
+#define MC_TEAL_A100 UIColorFromRGBWithAlpha(0xA7FFEB, 1.0);
+#define MC_TEAL_A200 UIColorFromRGBWithAlpha(0x64FFDA, 1.0);
+#define MC_TEAL_A400 UIColorFromRGBWithAlpha(0x1DE9B6, 1.0);
+#define MC_TEAL_A700 UIColorFromRGBWithAlpha(0x00BFA5, 1.0);
+
+// Green
+#define MC_GREEN_50 UIColorFromRGBWithAlpha(0xE8F5E9, 1.0);
+#define MC_GREEN_100 UIColorFromRGBWithAlpha(0xC8E6C9, 1.0);
+#define MC_GREEN_200 UIColorFromRGBWithAlpha(0xA5D6A7, 1.0);
+#define MC_GREEN_300 UIColorFromRGBWithAlpha(0x81C784, 1.0);
+#define MC_GREEN_400 UIColorFromRGBWithAlpha(0x66BB6A, 1.0);
+#define MC_GREEN_500 UIColorFromRGBWithAlpha(0x4CAF50, 1.0);
+#define MC_GREEN_600 UIColorFromRGBWithAlpha(0x43A047, 1.0);
+#define MC_GREEN_700 UIColorFromRGBWithAlpha(0x388E3C, 1.0);
+#define MC_GREEN_800 UIColorFromRGBWithAlpha(0x2E7D32, 1.0);
+#define MC_GREEN_900 UIColorFromRGBWithAlpha(0x1B5E20, 1.0);
+
+#define MC_GREEN_A100 UIColorFromRGBWithAlpha(0xB9F6CA, 1.0);
+#define MC_GREEN_A200 UIColorFromRGBWithAlpha(0x69F0AE, 1.0);
+#define MC_GREEN_A400 UIColorFromRGBWithAlpha(0x00E676, 1.0);
+#define MC_GREEN_A700 UIColorFromRGBWithAlpha(0x00C853, 1.0);
+
+// Light Green
+#define MC_LIGHT_GREEN_50 UIColorFromRGBWithAlpha(0xF1F8E9, 1.0);
+#define MC_LIGHT_GREEN_100 UIColorFromRGBWithAlpha(0xDCEDC8, 1.0);
+#define MC_LIGHT_GREEN_200 UIColorFromRGBWithAlpha(0xC5E1A5, 1.0);
+#define MC_LIGHT_GREEN_300 UIColorFromRGBWithAlpha(0xAED581, 1.0);
+#define MC_LIGHT_GREEN_400 UIColorFromRGBWithAlpha(0x9CCC65, 1.0);
+#define MC_LIGHT_GREEN_500 UIColorFromRGBWithAlpha(0x8BC34A, 1.0);
+#define MC_LIGHT_GREEN_600 UIColorFromRGBWithAlpha(0x7CB342, 1.0);
+#define MC_LIGHT_GREEN_700 UIColorFromRGBWithAlpha(0x689F38, 1.0);
+#define MC_LIGHT_GREEN_800 UIColorFromRGBWithAlpha(0x558B2F, 1.0);
+#define MC_LIGHT_GREEN_900 UIColorFromRGBWithAlpha(0x33691E, 1.0);
+
+#define MC_LIGHT_GREEN_A100 UIColorFromRGBWithAlpha(0xCCFF90, 1.0);
+#define MC_LIGHT_GREEN_A200 UIColorFromRGBWithAlpha(0xB2FF59, 1.0);
+#define MC_LIGHT_GREEN_A400 UIColorFromRGBWithAlpha(0x76FF03, 1.0);
+#define MC_LIGHT_GREEN_A700 UIColorFromRGBWithAlpha(0x64DD17, 1.0);
+
+// Lime
+#define MC_LIME_50 UIColorFromRGBWithAlpha(0xF9FBE7, 1.0);
+#define MC_LIME_100 UIColorFromRGBWithAlpha(0xF0F4C3, 1.0);
+#define MC_LIME_200 UIColorFromRGBWithAlpha(0xE6EE9C, 1.0);
+#define MC_LIME_300 UIColorFromRGBWithAlpha(0xDCE775, 1.0);
+#define MC_LIME_400 UIColorFromRGBWithAlpha(0xD4E157, 1.0);
+#define MC_LIME_500 UIColorFromRGBWithAlpha(0xCDDC39, 1.0);
+#define MC_LIME_600 UIColorFromRGBWithAlpha(0xC0CA33, 1.0);
+#define MC_LIME_700 UIColorFromRGBWithAlpha(0xAFB42B, 1.0);
+#define MC_LIME_800 UIColorFromRGBWithAlpha(0x9E9D24, 1.0);
+#define MC_LIME_900 UIColorFromRGBWithAlpha(0x827717, 1.0);
+
+#define MC_LIME_A100 UIColorFromRGBWithAlpha(0xF4FF81, 1.0);
+#define MC_LIME_A200 UIColorFromRGBWithAlpha(0xEEFF41, 1.0);
+#define MC_LIME_A400 UIColorFromRGBWithAlpha(0xC6FF00, 1.0);
+#define MC_LIME_A700 UIColorFromRGBWithAlpha(0xAEEA00, 1.0);
+
+// Yellow
+#define MC_YELLOW_50 UIColorFromRGBWithAlpha(0xFFFDE7, 1.0);
+#define MC_YELLOW_100 UIColorFromRGBWithAlpha(0xFFF9C4, 1.0);
+#define MC_YELLOW_200 UIColorFromRGBWithAlpha(0xFFF59D, 1.0);
+#define MC_YELLOW_300 UIColorFromRGBWithAlpha(0xFFF176, 1.0);
+#define MC_YELLOW_400 UIColorFromRGBWithAlpha(0xFFEE58, 1.0);
+#define MC_YELLOW_500 UIColorFromRGBWithAlpha(0xFFEB3B, 1.0);
+#define MC_YELLOW_600 UIColorFromRGBWithAlpha(0xFDD835, 1.0);
+#define MC_YELLOW_700 UIColorFromRGBWithAlpha(0xFBC02D, 1.0);
+#define MC_YELLOW_800 UIColorFromRGBWithAlpha(0xF9A825, 1.0);
+#define MC_YELLOW_900 UIColorFromRGBWithAlpha(0xF57F17, 1.0);
+
+#define MC_YELLOW_A100 UIColorFromRGBWithAlpha(0xFFFF8D, 1.0);
+#define MC_YELLOW_A200 UIColorFromRGBWithAlpha(0xFFFF00, 1.0);
+#define MC_YELLOW_A400 UIColorFromRGBWithAlpha(0xFFEA00, 1.0);
+#define MC_YELLOW_A700 UIColorFromRGBWithAlpha(0xFFD600, 1.0);
+
+// Amber
+#define MC_AMBER_50 UIColorFromRGBWithAlpha(0xFFF8E1, 1.0);
+#define MC_AMBER_100 UIColorFromRGBWithAlpha(0xFFECB3, 1.0);
+#define MC_AMBER_200 UIColorFromRGBWithAlpha(0xFFE082, 1.0);
+#define MC_AMBER_300 UIColorFromRGBWithAlpha(0xFFD54F, 1.0);
+#define MC_AMBER_400 UIColorFromRGBWithAlpha(0xFFCA28, 1.0);
+#define MC_AMBER_500 UIColorFromRGBWithAlpha(0xFFC107, 1.0);
+#define MC_AMBER_600 UIColorFromRGBWithAlpha(0xFFB300, 1.0);
+#define MC_AMBER_700 UIColorFromRGBWithAlpha(0xFFA000, 1.0);
+#define MC_AMBER_800 UIColorFromRGBWithAlpha(0xFF8F00, 1.0);
+#define MC_AMBER_900 UIColorFromRGBWithAlpha(0xFF6F00, 1.0);
+
+#define MC_AMBER_A100 UIColorFromRGBWithAlpha(0xFFE57F, 1.0);
+#define MC_AMBER_A200 UIColorFromRGBWithAlpha(0xFFD740, 1.0);
+#define MC_AMBER_A400 UIColorFromRGBWithAlpha(0xFFC400, 1.0);
+#define MC_AMBER_A700 UIColorFromRGBWithAlpha(0xFFAB00, 1.0);
+
+// Orange
+#define MC_ORANGE_50 UIColorFromRGBWithAlpha(0xFFF3E0, 1.0);
+#define MC_ORANGE_100 UIColorFromRGBWithAlpha(0xFFE0B2, 1.0);
+#define MC_ORANGE_200 UIColorFromRGBWithAlpha(0xFFCC80, 1.0);
+#define MC_ORANGE_300 UIColorFromRGBWithAlpha(0xFFB74D, 1.0);
+#define MC_ORANGE_400 UIColorFromRGBWithAlpha(0xFFA726, 1.0);
+#define MC_ORANGE_500 UIColorFromRGBWithAlpha(0xFF9800, 1.0);
+#define MC_ORANGE_600 UIColorFromRGBWithAlpha(0xFB8C00, 1.0);
+#define MC_ORANGE_700 UIColorFromRGBWithAlpha(0xF57C00, 1.0);
+#define MC_ORANGE_800 UIColorFromRGBWithAlpha(0xEF6C00, 1.0);
+#define MC_ORANGE_900 UIColorFromRGBWithAlpha(0xE65100, 1.0);
+
+#define MC_ORANGE_A100 UIColorFromRGBWithAlpha(0xFFD180, 1.0);
+#define MC_ORANGE_A200 UIColorFromRGBWithAlpha(0xFFAB40, 1.0);
+#define MC_ORANGE_A400 UIColorFromRGBWithAlpha(0xFF9100, 1.0);
+#define MC_ORANGE_A700 UIColorFromRGBWithAlpha(0xFF6D00, 1.0);
+
+// Deep Orange
+#define MC_DEEP_ORANGE_50 UIColorFromRGBWithAlpha(0xFBE9E7, 1.0);
+#define MC_DEEP_ORANGE_100 UIColorFromRGBWithAlpha(0xFFCCBC, 1.0);
+#define MC_DEEP_ORANGE_200 UIColorFromRGBWithAlpha(0xFFAB91, 1.0);
+#define MC_DEEP_ORANGE_300 UIColorFromRGBWithAlpha(0xFF8A65, 1.0);
+#define MC_DEEP_ORANGE_400 UIColorFromRGBWithAlpha(0xFF7043, 1.0);
+#define MC_DEEP_ORANGE_500 UIColorFromRGBWithAlpha(0xFF5722, 1.0);
+#define MC_DEEP_ORANGE_600 UIColorFromRGBWithAlpha(0xF4511E, 1.0);
+#define MC_DEEP_ORANGE_700 UIColorFromRGBWithAlpha(0xE64A19, 1.0);
+#define MC_DEEP_ORANGE_800 UIColorFromRGBWithAlpha(0xD84315, 1.0);
+#define MC_DEEP_ORANGE_900 UIColorFromRGBWithAlpha(0xBF360C, 1.0);
+
+#define MC_DEEP_ORANGE_A100 UIColorFromRGBWithAlpha(0xFF9E80, 1.0);
+#define MC_DEEP_ORANGE_A200 UIColorFromRGBWithAlpha(0xFF6E40, 1.0);
+#define MC_DEEP_ORANGE_A400 UIColorFromRGBWithAlpha(0xFF3D00, 1.0);
+#define MC_DEEP_ORANGE_A700 UIColorFromRGBWithAlpha(0xDD2C00, 1.0);
+
+// Brown
+#define MC_BROWN_50 UIColorFromRGBWithAlpha(0xEFEBE9, 1.0);
+#define MC_BROWN_100 UIColorFromRGBWithAlpha(0xD7CCC8, 1.0);
+#define MC_BROWN_200 UIColorFromRGBWithAlpha(0xBCAAA4, 1.0);
+#define MC_BROWN_300 UIColorFromRGBWithAlpha(0xA1887F, 1.0);
+#define MC_BROWN_400 UIColorFromRGBWithAlpha(0x8D6E63, 1.0);
+#define MC_BROWN_500 UIColorFromRGBWithAlpha(0x795548, 1.0);
+#define MC_BROWN_600 UIColorFromRGBWithAlpha(0x6D4C41, 1.0);
+#define MC_BROWN_700 UIColorFromRGBWithAlpha(0x5D4037, 1.0);
+#define MC_BROWN_800 UIColorFromRGBWithAlpha(0x4E342E, 1.0);
+#define MC_BROWN_900 UIColorFromRGBWithAlpha(0x3E2723, 1.0);
+
+// Grey
+#define MC_GREY_50 UIColorFromRGBWithAlpha(0xFAFAFA, 1.0);
+#define MC_GREY_100 UIColorFromRGBWithAlpha(0xF5F5F5, 1.0);
+#define MC_GREY_200 UIColorFromRGBWithAlpha(0xEEEEEE, 1.0);
+#define MC_GREY_300 UIColorFromRGBWithAlpha(0xE0E0E0, 1.0);
+#define MC_GREY_400 UIColorFromRGBWithAlpha(0xBDBDBD, 1.0);
+#define MC_GREY_500 UIColorFromRGBWithAlpha(0x9E9E9E, 1.0);
+#define MC_GREY_600 UIColorFromRGBWithAlpha(0x757575, 1.0);
+#define MC_GREY_700 UIColorFromRGBWithAlpha(0x616161, 1.0);
+#define MC_GREY_800 UIColorFromRGBWithAlpha(0x424242, 1.0);
+#define MC_GREY_900 UIColorFromRGBWithAlpha(0x212121, 1.0);
+
+// Blue Grey
+#define MC_BLUE_GREY_50 UIColorFromRGBWithAlpha(0xECEFF1, 1.0);
+#define MC_BLUE_GREY_100 UIColorFromRGBWithAlpha(0xCFD8DC, 1.0);
+#define MC_BLUE_GREY_200 UIColorFromRGBWithAlpha(0xB0BEC5, 1.0);
+#define MC_BLUE_GREY_300 UIColorFromRGBWithAlpha(0x90A4AE, 1.0);
+#define MC_BLUE_GREY_400 UIColorFromRGBWithAlpha(0x78909C, 1.0);
+#define MC_BLUE_GREY_500 UIColorFromRGBWithAlpha(0x607D8B, 1.0);
+#define MC_BLUE_GREY_600 UIColorFromRGBWithAlpha(0x546E7A, 1.0);
+#define MC_BLUE_GREY_700 UIColorFromRGBWithAlpha(0x455A64, 1.0);
+#define MC_BLUE_GREY_800 UIColorFromRGBWithAlpha(0x37474F, 1.0);
+#define MC_BLUE_GREY_900 UIColorFromRGBWithAlpha(0x263238, 1.0);
+
+// Black
+#define MC_BLACK UIColorFromRGBWithAlpha(0x000000, 1.0);
+
+// White
+#define MC_WHITE UIColorFromRGBWithAlpha(0xFFFFFF, 1.0);
+
