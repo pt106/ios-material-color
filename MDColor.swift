@@ -7,8 +7,897 @@
 
 import UIKit
 
-class MDColor {
-    private static func hexToUIColor (hexString : String) -> UIColor {
+public enum MDColor : Int {
+    // Black
+    case MC_BLACK
+    
+    // White
+    case MC_WHITE
+    
+    // Red
+    case MC_RED_50
+    case MC_RED_100
+    case MC_RED_200
+    case MC_RED_300
+    case MC_RED_400
+    case MC_RED_500
+    case MC_RED_600
+    case MC_RED_700
+    case MC_RED_800
+    case MC_RED_900
+    
+    case MC_RED_A100
+    case MC_RED_A200
+    case MC_RED_A400
+    case MC_RED_A700
+    
+    // Pink
+    case MC_PINK_50
+    case MC_PINK_100
+    case MC_PINK_200
+    case MC_PINK_300
+    case MC_PINK_400
+    case MC_PINK_500
+    case MC_PINK_600
+    case MC_PINK_700
+    case MC_PINK_800
+    case MC_PINK_900
+    
+    case MC_PINK_A100
+    case MC_PINK_A200
+    case MC_PINK_A400
+    case MC_PINK_A700
+    
+    // Purple
+    case MC_PURPLE_50
+    case MC_PURPLE_100
+    case MC_PURPLE_200
+    case MC_PURPLE_300
+    case MC_PURPLE_400
+    case MC_PURPLE_500
+    case MC_PURPLE_600
+    case MC_PURPLE_700
+    case MC_PURPLE_800
+    case MC_PURPLE_900
+    
+    case MC_PURPLE_A100
+    case MC_PURPLE_A200
+    case MC_PURPLE_A400
+    case MC_PURPLE_A700
+    
+    // Deep Purple
+    case MC_DEEP_PURPLE_50
+    case MC_DEEP_PURPLE_100
+    case MC_DEEP_PURPLE_200
+    case MC_DEEP_PURPLE_300
+    case MC_DEEP_PURPLE_400
+    case MC_DEEP_PURPLE_500
+    case MC_DEEP_PURPLE_600
+    case MC_DEEP_PURPLE_700
+    case MC_DEEP_PURPLE_800
+    case MC_DEEP_PURPLE_900
+    
+    case MC_DEEP_PURPLE_A100
+    case MC_DEEP_PURPLE_A200
+    case MC_DEEP_PURPLE_A400
+    case MC_DEEP_PURPLE_A700
+    
+    // Indigo
+    case MC_INDIGO_50
+    case MC_INDIGO_100
+    case MC_INDIGO_200
+    case MC_INDIGO_300
+    case MC_INDIGO_400
+    case MC_INDIGO_500
+    case MC_INDIGO_600
+    case MC_INDIGO_700
+    case MC_INDIGO_800
+    case MC_INDIGO_900
+    
+    case MC_INDIGO_A100
+    case MC_INDIGO_A200
+    case MC_INDIGO_A400
+    case MC_INDIGO_A700
+    
+    // Blue
+    case MC_BLUE_50
+    case MC_BLUE_100
+    case MC_BLUE_200
+    case MC_BLUE_300
+    case MC_BLUE_400
+    case MC_BLUE_500
+    case MC_BLUE_600
+    case MC_BLUE_700
+    case MC_BLUE_800
+    case MC_BLUE_900
+    
+    case MC_BLUE_A100
+    case MC_BLUE_A200
+    case MC_BLUE_A400
+    case MC_BLUE_A700
+    
+    // Light Blue
+    case MC_LIGHT_BLUE_50
+    case MC_LIGHT_BLUE_100
+    case MC_LIGHT_BLUE_200
+    case MC_LIGHT_BLUE_300
+    case MC_LIGHT_BLUE_400
+    case MC_LIGHT_BLUE_500
+    case MC_LIGHT_BLUE_600
+    case MC_LIGHT_BLUE_700
+    case MC_LIGHT_BLUE_800
+    case MC_LIGHT_BLUE_900
+    
+    case MC_LIGHT_BLUE_A100
+    case MC_LIGHT_BLUE_A200
+    case MC_LIGHT_BLUE_A400
+    case MC_LIGHT_BLUE_A700
+    
+    // Cyan
+    case MC_CYAN_50
+    case MC_CYAN_100
+    case MC_CYAN_200
+    case MC_CYAN_300
+    case MC_CYAN_400
+    case MC_CYAN_500
+    case MC_CYAN_600
+    case MC_CYAN_700
+    case MC_CYAN_800
+    case MC_CYAN_900
+    
+    case MC_CYAN_A100
+    case MC_CYAN_A200
+    case MC_CYAN_A400
+    case MC_CYAN_A700
+    
+    // Teal
+    case MC_TEAL_50
+    case MC_TEAL_100
+    case MC_TEAL_200
+    case MC_TEAL_300
+    case MC_TEAL_400
+    case MC_TEAL_500
+    case MC_TEAL_600
+    case MC_TEAL_700
+    case MC_TEAL_800
+    case MC_TEAL_900
+    
+    case MC_TEAL_A100
+    case MC_TEAL_A200
+    case MC_TEAL_A400
+    case MC_TEAL_A700
+    
+    // Green
+    case MC_GREEN_50
+    case MC_GREEN_100
+    case MC_GREEN_200
+    case MC_GREEN_300
+    case MC_GREEN_400
+    case MC_GREEN_500
+    case MC_GREEN_600
+    case MC_GREEN_700
+    case MC_GREEN_800
+    case MC_GREEN_900
+    
+    case MC_GREEN_A100
+    case MC_GREEN_A200
+    case MC_GREEN_A400
+    case MC_GREEN_A700
+    
+    // Light Green
+    case MC_LIGHT_GREEN_50
+    case MC_LIGHT_GREEN_100
+    case MC_LIGHT_GREEN_200
+    case MC_LIGHT_GREEN_300
+    case MC_LIGHT_GREEN_400
+    case MC_LIGHT_GREEN_500
+    case MC_LIGHT_GREEN_600
+    case MC_LIGHT_GREEN_700
+    case MC_LIGHT_GREEN_800
+    case MC_LIGHT_GREEN_900
+    
+    case MC_LIGHT_GREEN_A100
+    case MC_LIGHT_GREEN_A200
+    case MC_LIGHT_GREEN_A400
+    case MC_LIGHT_GREEN_A700
+    
+    // Lime
+    case MC_LIME_50
+    case MC_LIME_100
+    case MC_LIME_200
+    case MC_LIME_300
+    case MC_LIME_400
+    case MC_LIME_500
+    case MC_LIME_600
+    case MC_LIME_700
+    case MC_LIME_800
+    case MC_LIME_900
+    
+    case MC_LIME_A100
+    case MC_LIME_A200
+    case MC_LIME_A400
+    case MC_LIME_A700
+    
+    // Yellow
+    case MC_YELLOW_50
+    case MC_YELLOW_100
+    case MC_YELLOW_200
+    case MC_YELLOW_300
+    case MC_YELLOW_400
+    case MC_YELLOW_500
+    case MC_YELLOW_600
+    case MC_YELLOW_700
+    case MC_YELLOW_800
+    case MC_YELLOW_900
+    
+    case MC_YELLOW_A100
+    case MC_YELLOW_A200
+    case MC_YELLOW_A400
+    case MC_YELLOW_A700
+    
+    // Amber
+    case MC_AMBER_50
+    case MC_AMBER_100
+    case MC_AMBER_200
+    case MC_AMBER_300
+    case MC_AMBER_400
+    case MC_AMBER_500
+    case MC_AMBER_600
+    case MC_AMBER_700
+    case MC_AMBER_800
+    case MC_AMBER_900
+    
+    case MC_AMBER_A100
+    case MC_AMBER_A200
+    case MC_AMBER_A400
+    case MC_AMBER_A700
+    
+    // Orange
+    case MC_ORANGE_50
+    case MC_ORANGE_100
+    case MC_ORANGE_200
+    case MC_ORANGE_300
+    case MC_ORANGE_400
+    case MC_ORANGE_500
+    case MC_ORANGE_600
+    case MC_ORANGE_700
+    case MC_ORANGE_800
+    case MC_ORANGE_900
+    
+    case MC_ORANGE_A100
+    case MC_ORANGE_A200
+    case MC_ORANGE_A400
+    case MC_ORANGE_A700
+    
+    // Deep Orange
+    case MC_DEEP_ORANGE_50
+    case MC_DEEP_ORANGE_100
+    case MC_DEEP_ORANGE_200
+    case MC_DEEP_ORANGE_300
+    case MC_DEEP_ORANGE_400
+    case MC_DEEP_ORANGE_500
+    case MC_DEEP_ORANGE_600
+    case MC_DEEP_ORANGE_700
+    case MC_DEEP_ORANGE_800
+    case MC_DEEP_ORANGE_900
+    
+    case MC_DEEP_ORANGE_A100
+    case MC_DEEP_ORANGE_A200
+    case MC_DEEP_ORANGE_A400
+    case MC_DEEP_ORANGE_A700
+    
+    // Brown
+    case MC_BROWN_50
+    case MC_BROWN_100
+    case MC_BROWN_200
+    case MC_BROWN_300
+    case MC_BROWN_400
+    case MC_BROWN_500
+    case MC_BROWN_600
+    case MC_BROWN_700
+    case MC_BROWN_800
+    case MC_BROWN_900
+    
+    // Greycase
+    case MC_GREY_50
+    case MC_GREY_100
+    case MC_GREY_200
+    case MC_GREY_300
+    case MC_GREY_400
+    case MC_GREY_500
+    case MC_GREY_600
+    case MC_GREY_700
+    case MC_GREY_800
+    case MC_GREY_900
+    
+    // Blue Grey
+    case MC_BLUE_GREY_50
+    case MC_BLUE_GREY_100
+    case MC_BLUE_GREY_200
+    case MC_BLUE_GREY_300
+    case MC_BLUE_GREY_400
+    case MC_BLUE_GREY_500
+    case MC_BLUE_GREY_600
+    case MC_BLUE_GREY_700
+    case MC_BLUE_GREY_800
+    case MC_BLUE_GREY_900
+    
+    func toString () -> String {
+        switch self{
+            // Black
+        case MC_BLACK:
+            return "000000"
+            // White
+        case MC_WHITE:
+            return "FFFFFF"
+            // Red
+        case MC_RED_50:
+            return "FFEBEE"
+        case MC_RED_100:
+            return "FFCDD2"
+        case MC_RED_200:
+            return "EF9A9A"
+        case MC_RED_300:
+            return "E57373"
+        case MC_RED_400:
+            return "EF5350"
+        case MC_RED_500:
+            return "F44336"
+        case MC_RED_600:
+            return "E53935"
+        case MC_RED_700:
+            return "D32F2F"
+        case MC_RED_800:
+            return "C62828"
+        case MC_RED_900:
+            return "B71C1C"
+            
+        case MC_RED_A100:
+            return "FF8A80"
+        case MC_RED_A200:
+            return "FF5252"
+        case MC_RED_A400:
+            return "FF1744"
+        case MC_RED_A700:
+            return "D50000"
+            
+            // Pink
+        case MC_PINK_50:
+            return "FCE4EC"
+        case MC_PINK_100:
+            return "F8BBD0"
+        case MC_PINK_200:
+            return "F48FB1"
+        case MC_PINK_300:
+            return "F06292"
+        case MC_PINK_400:
+            return "EC407A"
+        case MC_PINK_500:
+            return "E91E63"
+        case MC_PINK_600:
+            return "D81B60"
+        case MC_PINK_700:
+            return "C2185B"
+        case MC_PINK_800:
+            return "AD1457"
+        case MC_PINK_900:
+            return "880E4F"
+            
+        case MC_PINK_A100:
+            return "FF80AB"
+        case MC_PINK_A200:
+            return "FF4081"
+        case MC_PINK_A400:
+            return "F50057"
+        case MC_PINK_A700:
+            return "C51162"
+            
+            // Purple
+        case MC_PURPLE_50:
+            return "F3E5F5"
+        case MC_PURPLE_100:
+            return "E1BEE7"
+        case MC_PURPLE_200:
+            return "CE93D8"
+        case MC_PURPLE_300:
+            return "BA68C8"
+        case MC_PURPLE_400:
+            return "AB47BC"
+        case MC_PURPLE_500:
+            return "9C27B0"
+        case MC_PURPLE_600:
+            return "8E24AA"
+        case MC_PURPLE_700:
+            return "7B1FA2"
+        case MC_PURPLE_800:
+            return "6A1B9A"
+        case MC_PURPLE_900:
+            return "4A148C"
+            
+        case MC_PURPLE_A100:
+            return "EA80FC"
+        case MC_PURPLE_A200:
+            return "E040FB"
+        case MC_PURPLE_A400:
+            return "D500F9"
+        case MC_PURPLE_A700:
+            return "AA00FF"
+            
+            // Deep Purple
+        case MC_DEEP_PURPLE_50:
+            return "EDE7F6"
+        case MC_DEEP_PURPLE_100:
+            return "D1C4E9"
+        case MC_DEEP_PURPLE_200:
+            return "B39DDB"
+        case MC_DEEP_PURPLE_300:
+            return "9575CD"
+        case MC_DEEP_PURPLE_400:
+            return "7E57C2"
+        case MC_DEEP_PURPLE_500:
+            return "673AB7"
+        case MC_DEEP_PURPLE_600:
+            return "5E35B1"
+        case MC_DEEP_PURPLE_700:
+            return "512DA8"
+        case MC_DEEP_PURPLE_800:
+            return "4527A0"
+        case MC_DEEP_PURPLE_900:
+            return "311B92"
+            
+        case MC_DEEP_PURPLE_A100:
+            return "B388FF"
+        case MC_DEEP_PURPLE_A200:
+            return "7C4DFF"
+        case MC_DEEP_PURPLE_A400:
+            return "651FFF"
+        case MC_DEEP_PURPLE_A700:
+            return "6200EA"
+            
+            // Indigo
+        case MC_INDIGO_50:
+            return "E8EAF6"
+        case MC_INDIGO_100:
+            return "C5CAE9"
+        case MC_INDIGO_200:
+            return "9FA8DA"
+        case MC_INDIGO_300:
+            return "7986CB"
+        case MC_INDIGO_400:
+            return "5C6BC0"
+        case MC_INDIGO_500:
+            return "3F51B5"
+        case MC_INDIGO_600:
+            return "3949AB"
+        case MC_INDIGO_700:
+            return "303F9F"
+        case MC_INDIGO_800:
+            return "283593"
+        case MC_INDIGO_900:
+            return "1A237E"
+            
+        case MC_INDIGO_A100:
+            return "8C9EFF"
+        case MC_INDIGO_A200:
+            return "536DFE"
+        case MC_INDIGO_A400:
+            return "3D5AFE"
+        case MC_INDIGO_A700:
+            return "304FFE"
+            
+            // Blue
+        case MC_BLUE_50:
+            return "E3F2FD"
+        case MC_BLUE_100:
+            return "BBDEFB"
+        case MC_BLUE_200:
+            return "90CAF9"
+        case MC_BLUE_300:
+            return "64B5F6"
+        case MC_BLUE_400:
+            return "42A5F5"
+        case MC_BLUE_500:
+            return "2196F3"
+        case MC_BLUE_600:
+            return "1E88E5"
+        case MC_BLUE_700:
+            return "1976D2"
+        case MC_BLUE_800:
+            return "1565C0"
+        case MC_BLUE_900:
+            return "0D47A1"
+            
+        case MC_BLUE_A100:
+            return "82B1FF"
+        case MC_BLUE_A200:
+            return "448AFF"
+        case MC_BLUE_A400:
+            return "2979FF"
+        case MC_BLUE_A700:
+            return "2962FF"
+            
+            // Light Blue
+        case MC_LIGHT_BLUE_50:
+            return "E1F5FE"
+        case MC_LIGHT_BLUE_100:
+            return "B3E5FC"
+        case MC_LIGHT_BLUE_200:
+            return "81D4FA"
+        case MC_LIGHT_BLUE_300:
+            return "4FC3F7"
+        case MC_LIGHT_BLUE_400:
+            return "29B6F6"
+        case MC_LIGHT_BLUE_500:
+            return "03A9F4"
+        case MC_LIGHT_BLUE_600:
+            return "039BE5"
+        case MC_LIGHT_BLUE_700:
+            return "0288D1"
+        case MC_LIGHT_BLUE_800:
+            return "0277BD"
+        case MC_LIGHT_BLUE_900:
+            return "01579B"
+            
+        case MC_LIGHT_BLUE_A100:
+            return "80D8FF"
+        case MC_LIGHT_BLUE_A200:
+            return "40C4FF"
+        case MC_LIGHT_BLUE_A400:
+            return "00B0FF"
+        case MC_LIGHT_BLUE_A700:
+            return "0091EA"
+            
+            // Cyan
+        case MC_CYAN_50:
+            return "E0F7FA"
+        case MC_CYAN_100:
+            return "B2EBF2"
+        case MC_CYAN_200:
+            return "80DEEA"
+        case MC_CYAN_300:
+            return "4DD0E1"
+        case MC_CYAN_400:
+            return "26C6DA"
+        case MC_CYAN_500:
+            return "00BCD4"
+        case MC_CYAN_600:
+            return "00ACC1"
+        case MC_CYAN_700:
+            return "0097A7"
+        case MC_CYAN_800:
+            return "00838F"
+        case MC_CYAN_900:
+            return "006064"
+            
+        case MC_CYAN_A100:
+            return "84FFFF"
+        case MC_CYAN_A200:
+            return "18FFFF"
+        case MC_CYAN_A400:
+            return "00E5FF"
+        case MC_CYAN_A700:
+            return "00B8D4"
+            
+            // Teal
+        case MC_TEAL_50:
+            return "E0F2F1"
+        case MC_TEAL_100:
+            return "B2DFDB"
+        case MC_TEAL_200:
+            return "80CBC4"
+        case MC_TEAL_300:
+            return "4DB6AC"
+        case MC_TEAL_400:
+            return "26A69A"
+        case MC_TEAL_500:
+            return "009688"
+        case MC_TEAL_600:
+            return "00897B"
+        case MC_TEAL_700:
+            return "00796B"
+        case MC_TEAL_800:
+            return "00695C"
+        case MC_TEAL_900:
+            return "004D40"
+            
+        case MC_TEAL_A100:
+            return "A7FFEB"
+        case MC_TEAL_A200:
+            return "64FFDA"
+        case MC_TEAL_A400:
+            return "1DE9B6"
+        case MC_TEAL_A700:
+            return "00BFA5"
+            
+            // Green
+        case MC_GREEN_50:
+            return "E8F5E9"
+        case MC_GREEN_100:
+            return "C8E6C9"
+        case MC_GREEN_200:
+            return "A5D6A7"
+        case MC_GREEN_300:
+            return "81C784"
+        case MC_GREEN_400:
+            return "66BB6A"
+        case MC_GREEN_500:
+            return "4CAF50"
+        case MC_GREEN_600:
+            return "43A047"
+        case MC_GREEN_700:
+            return "388E3C"
+        case MC_GREEN_800:
+            return "2E7D32"
+        case MC_GREEN_900:
+            return "1B5E20"
+            
+        case MC_GREEN_A100:
+            return "B9F6CA"
+        case MC_GREEN_A200:
+            return "69F0AE"
+        case MC_GREEN_A400:
+            return "00E676"
+        case MC_GREEN_A700:
+            return "00C853"
+            
+            // Light Green
+        case MC_LIGHT_GREEN_50:
+            return "F1F8E9"
+        case MC_LIGHT_GREEN_100:
+            return "DCEDC8"
+        case MC_LIGHT_GREEN_200:
+            return "C5E1A5"
+        case MC_LIGHT_GREEN_300:
+            return "AED581"
+        case MC_LIGHT_GREEN_400:
+            return "9CCC65"
+        case MC_LIGHT_GREEN_500:
+            return "8BC34A"
+        case MC_LIGHT_GREEN_600:
+            return "7CB342"
+        case MC_LIGHT_GREEN_700:
+            return "689F38"
+        case MC_LIGHT_GREEN_800:
+            return "558B2F"
+        case MC_LIGHT_GREEN_900:
+            return "33691E"
+            
+        case MC_LIGHT_GREEN_A100:
+            return "CCFF90"
+        case MC_LIGHT_GREEN_A200:
+            return "B2FF59"
+        case MC_LIGHT_GREEN_A400:
+            return "76FF03"
+        case MC_LIGHT_GREEN_A700:
+            return "64DD17"
+            
+            // Lime
+        case MC_LIME_50:
+            return "F9FBE7"
+        case MC_LIME_100:
+            return "F0F4C3"
+        case MC_LIME_200:
+            return "E6EE9C"
+        case MC_LIME_300:
+            return "DCE775"
+        case MC_LIME_400:
+            return "D4E157"
+        case MC_LIME_500:
+            return "CDDC39"
+        case MC_LIME_600:
+            return "C0CA33"
+        case MC_LIME_700:
+            return "AFB42B"
+        case MC_LIME_800:
+            return "9E9D24"
+        case MC_LIME_900:
+            return "827717"
+            
+        case MC_LIME_A100:
+            return "F4FF81"
+        case MC_LIME_A200:
+            return "EEFF41"
+        case MC_LIME_A400:
+            return "C6FF00"
+        case MC_LIME_A700:
+            return "AEEA00"
+            
+            // Yellow
+        case MC_YELLOW_50:
+            return "FFFDE7"
+        case MC_YELLOW_100:
+            return "FFF9C4"
+        case MC_YELLOW_200:
+            return "FFF59D"
+        case MC_YELLOW_300:
+            return "FFF176"
+        case MC_YELLOW_400:
+            return "FFEE58"
+        case MC_YELLOW_500:
+            return "FFEB3B"
+        case MC_YELLOW_600:
+            return "FDD835"
+        case MC_YELLOW_700:
+            return "FBC02D"
+        case MC_YELLOW_800:
+            return "F9A825"
+        case MC_YELLOW_900:
+            return "F57F17"
+            
+        case MC_YELLOW_A100:
+            return "FFFF8D"
+        case MC_YELLOW_A200:
+            return "FFFF00"
+        case MC_YELLOW_A400:
+            return "FFEA00"
+        case MC_YELLOW_A700:
+            return "FFD600"
+            
+            // Amber
+        case MC_AMBER_50:
+            return "FFF8E1"
+        case MC_AMBER_100:
+            return "FFECB3"
+        case MC_AMBER_200:
+            return "FFE082"
+        case MC_AMBER_300:
+            return "FFD54F"
+        case MC_AMBER_400:
+            return "FFCA28"
+        case MC_AMBER_500:
+            return "FFC107"
+        case MC_AMBER_600:
+            return "FFB300"
+        case MC_AMBER_700:
+            return "FFA000"
+        case MC_AMBER_800:
+            return "FF8F00"
+        case MC_AMBER_900:
+            return "FF6F00"
+            
+        case MC_AMBER_A100:
+            return "FFE57F"
+        case MC_AMBER_A200:
+            return "FFD740"
+        case MC_AMBER_A400:
+            return "FFC400"
+        case MC_AMBER_A700:
+            return "FFAB00"
+            
+            // Orange
+        case MC_ORANGE_50:
+            return "FFF3E0"
+        case MC_ORANGE_100:
+            return "FFE0B2"
+        case MC_ORANGE_200:
+            return "FFCC80"
+        case MC_ORANGE_300:
+            return "FFB74D"
+        case MC_ORANGE_400:
+            return "FFA726"
+        case MC_ORANGE_500:
+            return "FF9800"
+        case MC_ORANGE_600:
+            return "FB8C00"
+        case MC_ORANGE_700:
+            return "F57C00"
+        case MC_ORANGE_800:
+            return "EF6C00"
+        case MC_ORANGE_900:
+            return "E65100"
+            
+        case MC_ORANGE_A100:
+            return "FFD180"
+        case MC_ORANGE_A200:
+            return "FFAB40"
+        case MC_ORANGE_A400:
+            return "FF9100"
+        case MC_ORANGE_A700:
+            return "FF6D00"
+            
+            // Deep Orange
+        case MC_DEEP_ORANGE_50:
+            return "FBE9E7"
+        case MC_DEEP_ORANGE_100:
+            return "FFCCBC"
+        case MC_DEEP_ORANGE_200:
+            return "FFAB91"
+        case MC_DEEP_ORANGE_300:
+            return "FF8A65"
+        case MC_DEEP_ORANGE_400:
+            return "FF7043"
+        case MC_DEEP_ORANGE_500:
+            return "FF5722"
+        case MC_DEEP_ORANGE_600:
+            return "F4511E"
+        case MC_DEEP_ORANGE_700:
+            return "E64A19"
+        case MC_DEEP_ORANGE_800:
+            return "D84315"
+        case MC_DEEP_ORANGE_900:
+            return "BF360C"
+            
+        case MC_DEEP_ORANGE_A100:
+            return "FF9E80"
+        case MC_DEEP_ORANGE_A200:
+            return "FF6E40"
+        case MC_DEEP_ORANGE_A400:
+            return "FF3D00"
+        case MC_DEEP_ORANGE_A700:
+            return "DD2C00"
+            
+            // Brown
+        case MC_BROWN_50:
+            return "EFEBE9"
+        case MC_BROWN_100:
+            return "D7CCC8"
+        case MC_BROWN_200:
+            return "BCAAA4"
+        case MC_BROWN_300:
+            return "A1887F"
+        case MC_BROWN_400:
+            return "8D6E63"
+        case MC_BROWN_500:
+            return "795548"
+        case MC_BROWN_600:
+            return "6D4C41"
+        case MC_BROWN_700:
+            return "5D4037"
+        case MC_BROWN_800:
+            return "4E342E"
+        case MC_BROWN_900:
+            return "3E2723"
+            
+            // Greycase
+        case MC_GREY_50:
+            return "FAFAFA"
+        case MC_GREY_100:
+            return "F5F5F5"
+        case MC_GREY_200:
+            return "EEEEEE"
+        case MC_GREY_300:
+            return "E0E0E0"
+        case MC_GREY_400:
+            return "BDBDBD"
+        case MC_GREY_500:
+            return "9E9E9E"
+        case MC_GREY_600:
+            return "757575"
+        case MC_GREY_700:
+            return "616161"
+        case MC_GREY_800:
+            return "424242"
+        case MC_GREY_900:
+            return "212121"
+            
+            // Blue Grey
+        case MC_BLUE_GREY_50:
+            return "ECEFF1"
+        case MC_BLUE_GREY_100:
+            return "CFD8DC"
+        case MC_BLUE_GREY_200:
+            return "B0BEC5"
+        case MC_BLUE_GREY_300:
+            return "90A4AE"
+        case MC_BLUE_GREY_400:
+            return "78909C"
+        case MC_BLUE_GREY_500:
+            return "607D8B"
+        case MC_BLUE_GREY_600:
+            return "546E7A"
+        case MC_BLUE_GREY_700:
+            return "455A64"
+        case MC_BLUE_GREY_800:
+            return "37474F"
+        case MC_BLUE_GREY_900:
+            return "263238"
+        }
+    }
+
+}
+
+extension UIColor {
+    class func hexToUIColor (hexString : String) -> UIColor {
         let scanner = NSScanner(string: hexString as String)
         var color: UInt32 = 0
         if scanner.scanHexInt(&color) {
@@ -22,332 +911,11 @@ class MDColor {
         }
     }
     
-    static func getUIColorFromHex(hexString: String) -> UIColor {
-        var returnColorCode = "FFFFFF"
+    class func mdColor(hexString: String) -> UIColor {
         
-        if let job = mcolorToHex[hexString] {
-            returnColorCode = job
-        }
+        print(hexString)
         
-        print(returnColorCode)
-        
-        return MDColor.hexToUIColor(returnColorCode)
+        return UIColor.hexToUIColor(hexString)
     }
     
-    private static let mcolorToHex: Dictionary<String, String> = [
-        // Black
-        "MC_BLACK" : "000000",
-        
-        // White
-        "MC_WHITE" : "FFFFFF",
-        
-        // Red
-        "MC_RED_50" : "FFEBEE",
-        "MC_RED_100" : "FFCDD2",
-        "MC_RED_200" : "EF9A9A",
-        "MC_RED_300" : "E57373",
-        "MC_RED_400" : "EF5350",
-        "MC_RED_500" : "F44336",
-        "MC_RED_600" : "E53935",
-        "MC_RED_700" : "D32F2F",
-        "MC_RED_800" : "C62828",
-        "MC_RED_900" : "B71C1C",
-        
-        "MC_RED_A100" : "FF8A80",
-        "MC_RED_A200" : "FF5252",
-        "MC_RED_A400" : "FF1744",
-        "MC_RED_A700" : "D50000",
-        
-        // Pink
-        "MC_PINK_50" : "FCE4EC",
-        "MC_PINK_100" : "F8BBD0",
-        "MC_PINK_200" : "F48FB1",
-        "MC_PINK_300" : "F06292",
-        "MC_PINK_400" : "EC407A",
-        "MC_PINK_500" : "E91E63",
-        "MC_PINK_600" : "D81B60",
-        "MC_PINK_700" : "C2185B",
-        "MC_PINK_800" : "AD1457",
-        "MC_PINK_900" : "880E4F",
-        
-        "MC_PINK_A100" : "FF80AB",
-        "MC_PINK_A200" : "FF4081",
-        "MC_PINK_A400" : "F50057",
-        "MC_PINK_A700" : "C51162",
-        
-        // Purple
-        "MC_PURPLE_50" : "F3E5F5",
-        "MC_PURPLE_100" : "E1BEE7",
-        "MC_PURPLE_200" : "CE93D8",
-        "MC_PURPLE_300" : "BA68C8",
-        "MC_PURPLE_400" : "AB47BC",
-        "MC_PURPLE_500" : "9C27B0",
-        "MC_PURPLE_600" : "8E24AA",
-        "MC_PURPLE_700" : "7B1FA2",
-        "MC_PURPLE_800" : "6A1B9A",
-        "MC_PURPLE_900" : "4A148C",
-        
-        "MC_PURPLE_A100" : "EA80FC",
-        "MC_PURPLE_A200" : "E040FB",
-        "MC_PURPLE_A400" : "D500F9",
-        "MC_PURPLE_A700" : "AA00FF",
-        
-        // Deep Purple
-        "MC_DEEP_PURPLE_50" : "EDE7F6",
-        "MC_DEEP_PURPLE_100" : "D1C4E9",
-        "MC_DEEP_PURPLE_200" : "B39DDB",
-        "MC_DEEP_PURPLE_300" : "9575CD",
-        "MC_DEEP_PURPLE_400" : "7E57C2",
-        "MC_DEEP_PURPLE_500" : "673AB7",
-        "MC_DEEP_PURPLE_600" : "5E35B1",
-        "MC_DEEP_PURPLE_700" : "512DA8",
-        "MC_DEEP_PURPLE_800" : "4527A0",
-        "MC_DEEP_PURPLE_900" : "311B92",
-        
-        "MC_DEEP_PURPLE_A100" : "B388FF",
-        "MC_DEEP_PURPLE_A200" : "7C4DFF",
-        "MC_DEEP_PURPLE_A400" : "651FFF",
-        "MC_DEEP_PURPLE_A700" : "6200EA",
-        
-        // Indigo
-        "MC_INDIGO_50" : "E8EAF6",
-        "MC_INDIGO_100" : "C5CAE9",
-        "MC_INDIGO_200" : "9FA8DA",
-        "MC_INDIGO_300" : "7986CB",
-        "MC_INDIGO_400" : "5C6BC0",
-        "MC_INDIGO_500" : "3F51B5",
-        "MC_INDIGO_600" : "3949AB",
-        "MC_INDIGO_700" : "303F9F",
-        "MC_INDIGO_800" : "283593",
-        "MC_INDIGO_900" : "1A237E",
-        
-        "MC_INDIGO_A100" : "8C9EFF",
-        "MC_INDIGO_A200" : "536DFE",
-        "MC_INDIGO_A400" : "3D5AFE",
-        "MC_INDIGO_A700" : "304FFE",
-        
-        // Blue
-        "MC_BLUE_50" : "E3F2FD",
-        "MC_BLUE_100" : "BBDEFB",
-        "MC_BLUE_200" : "90CAF9",
-        "MC_BLUE_300" : "64B5F6",
-        "MC_BLUE_400" : "42A5F5",
-        "MC_BLUE_500" : "2196F3",
-        "MC_BLUE_600" : "1E88E5",
-        "MC_BLUE_700" : "1976D2",
-        "MC_BLUE_800" : "1565C0",
-        "MC_BLUE_900" : "0D47A1",
-        
-        "MC_BLUE_A100" : "82B1FF",
-        "MC_BLUE_A200" : "448AFF",
-        "MC_BLUE_A400" : "2979FF",
-        "MC_BLUE_A700" : "2962FF",
-        
-        // Light Blue
-        "MC_LIGHT_BLUE_50" : "E1F5FE",
-        "MC_LIGHT_BLUE_100" : "B3E5FC",
-        "MC_LIGHT_BLUE_200" : "81D4FA",
-        "MC_LIGHT_BLUE_300" : "4FC3F7",
-        "MC_LIGHT_BLUE_400" : "29B6F6",
-        "MC_LIGHT_BLUE_500" : "03A9F4",
-        "MC_LIGHT_BLUE_600" : "039BE5",
-        "MC_LIGHT_BLUE_700" : "0288D1",
-        "MC_LIGHT_BLUE_800" : "0277BD",
-        "MC_LIGHT_BLUE_900" : "01579B",
-        
-        "MC_LIGHT_BLUE_A100" : "80D8FF",
-        "MC_LIGHT_BLUE_A200" : "40C4FF",
-        "MC_LIGHT_BLUE_A400" : "00B0FF",
-        "MC_LIGHT_BLUE_A700" : "0091EA",
-        
-        // Cyan
-        "MC_CYAN_50" : "E0F7FA",
-        "MC_CYAN_100" : "B2EBF2",
-        "MC_CYAN_200" : "80DEEA",
-        "MC_CYAN_300" : "4DD0E1",
-        "MC_CYAN_400" : "26C6DA",
-        "MC_CYAN_500" : "00BCD4",
-        "MC_CYAN_600" : "00ACC1",
-        "MC_CYAN_700" : "0097A7",
-        "MC_CYAN_800" : "00838F",
-        "MC_CYAN_900" : "006064",
-        
-        "MC_CYAN_A100" : "84FFFF",
-        "MC_CYAN_A200" : "18FFFF",
-        "MC_CYAN_A400" : "00E5FF",
-        "MC_CYAN_A700" : "00B8D4",
-        
-        // Teal
-        "MC_TEAL_50" : "E0F2F1",
-        "MC_TEAL_100" : "B2DFDB",
-        "MC_TEAL_200" : "80CBC4",
-        "MC_TEAL_300" : "4DB6AC",
-        "MC_TEAL_400" : "26A69A",
-        "MC_TEAL_500" : "009688",
-        "MC_TEAL_600" : "00897B",
-        "MC_TEAL_700" : "00796B",
-        "MC_TEAL_800" : "00695C",
-        "MC_TEAL_900" : "004D40",
-        
-        "MC_TEAL_A100" : "A7FFEB",
-        "MC_TEAL_A200" : "64FFDA",
-        "MC_TEAL_A400" : "1DE9B6",
-        "MC_TEAL_A700" : "00BFA5",
-        
-        // Green
-        "MC_GREEN_50" : "E8F5E9",
-        "MC_GREEN_100" : "C8E6C9",
-        "MC_GREEN_200" : "A5D6A7",
-        "MC_GREEN_300" : "81C784",
-        "MC_GREEN_400" : "66BB6A",
-        "MC_GREEN_500" : "4CAF50",
-        "MC_GREEN_600" : "43A047",
-        "MC_GREEN_700" : "388E3C",
-        "MC_GREEN_800" : "2E7D32",
-        "MC_GREEN_900" : "1B5E20",
-        
-        "MC_GREEN_A100" : "B9F6CA",
-        "MC_GREEN_A200" : "69F0AE",
-        "MC_GREEN_A400" : "00E676",
-        "MC_GREEN_A700" : "00C853",
-        
-        // Light Green
-        "MC_LIGHT_GREEN_50" : "F1F8E9",
-        "MC_LIGHT_GREEN_100" : "DCEDC8",
-        "MC_LIGHT_GREEN_200" : "C5E1A5",
-        "MC_LIGHT_GREEN_300" : "AED581",
-        "MC_LIGHT_GREEN_400" : "9CCC65",
-        "MC_LIGHT_GREEN_500" : "8BC34A",
-        "MC_LIGHT_GREEN_600" : "7CB342",
-        "MC_LIGHT_GREEN_700" : "689F38",
-        "MC_LIGHT_GREEN_800" : "558B2F",
-        "MC_LIGHT_GREEN_900" : "33691E",
-        
-        "MC_LIGHT_GREEN_A100" : "CCFF90",
-        "MC_LIGHT_GREEN_A200" : "B2FF59",
-        "MC_LIGHT_GREEN_A400" : "76FF03",
-        "MC_LIGHT_GREEN_A700" : "64DD17",
-        
-        // Lime
-        "MC_LIME_50" : "F9FBE7",
-        "MC_LIME_100" : "F0F4C3",
-        "MC_LIME_200" : "E6EE9C",
-        "MC_LIME_300" : "DCE775",
-        "MC_LIME_400" : "D4E157",
-        "MC_LIME_500" : "CDDC39",
-        "MC_LIME_600" : "C0CA33",
-        "MC_LIME_700" : "AFB42B",
-        "MC_LIME_800" : "9E9D24",
-        "MC_LIME_900" : "827717",
-        
-        "MC_LIME_A100" : "F4FF81",
-        "MC_LIME_A200" : "EEFF41",
-        "MC_LIME_A400" : "C6FF00",
-        "MC_LIME_A700" : "AEEA00",
-        
-        // Yellow
-        "MC_YELLOW_50" : "FFFDE7",
-        "MC_YELLOW_100" : "FFF9C4",
-        "MC_YELLOW_200" : "FFF59D",
-        "MC_YELLOW_300" : "FFF176",
-        "MC_YELLOW_400" : "FFEE58",
-        "MC_YELLOW_500" : "FFEB3B",
-        "MC_YELLOW_600" : "FDD835",
-        "MC_YELLOW_700" : "FBC02D",
-        "MC_YELLOW_800" : "F9A825",
-        "MC_YELLOW_900" : "F57F17",
-        
-        "MC_YELLOW_A100" : "FFFF8D",
-        "MC_YELLOW_A200" : "FFFF00",
-        "MC_YELLOW_A400" : "FFEA00",
-        "MC_YELLOW_A700" : "FFD600",
-        
-        // Amber
-        "MC_AMBER_50" : "FFF8E1",
-        "MC_AMBER_100" : "FFECB3",
-        "MC_AMBER_200" : "FFE082",
-        "MC_AMBER_300" : "FFD54F",
-        "MC_AMBER_400" : "FFCA28",
-        "MC_AMBER_500" : "FFC107",
-        "MC_AMBER_600" : "FFB300",
-        "MC_AMBER_700" : "FFA000",
-        "MC_AMBER_800" : "FF8F00",
-        "MC_AMBER_900" : "FF6F00",
-        
-        "MC_AMBER_A100" : "FFE57F",
-        "MC_AMBER_A200" : "FFD740",
-        "MC_AMBER_A400" : "FFC400",
-        "MC_AMBER_A700" : "FFAB00",
-        
-        // Orange
-        "MC_ORANGE_50" : "FFF3E0",
-        "MC_ORANGE_100" : "FFE0B2",
-        "MC_ORANGE_200" : "FFCC80",
-        "MC_ORANGE_300" : "FFB74D",
-        "MC_ORANGE_400" : "FFA726",
-        "MC_ORANGE_500" : "FF9800",
-        "MC_ORANGE_600" : "FB8C00",
-        "MC_ORANGE_700" : "F57C00",
-        "MC_ORANGE_800" : "EF6C00",
-        "MC_ORANGE_900" : "E65100",
-        
-        "MC_ORANGE_A100" : "FFD180",
-        "MC_ORANGE_A200" : "FFAB40",
-        "MC_ORANGE_A400" : "FF9100",
-        "MC_ORANGE_A700" : "FF6D00",
-        
-        // Deep Orange
-        "MC_DEEP_ORANGE_50" : "FBE9E7",
-        "MC_DEEP_ORANGE_100" : "FFCCBC",
-        "MC_DEEP_ORANGE_200" : "FFAB91",
-        "MC_DEEP_ORANGE_300" : "FF8A65",
-        "MC_DEEP_ORANGE_400" : "FF7043",
-        "MC_DEEP_ORANGE_500" : "FF5722",
-        "MC_DEEP_ORANGE_600" : "F4511E",
-        "MC_DEEP_ORANGE_700" : "E64A19",
-        "MC_DEEP_ORANGE_800" : "D84315",
-        "MC_DEEP_ORANGE_900" : "BF360C",
-        
-        "MC_DEEP_ORANGE_A100" : "FF9E80",
-        "MC_DEEP_ORANGE_A200" : "FF6E40",
-        "MC_DEEP_ORANGE_A400" : "FF3D00",
-        "MC_DEEP_ORANGE_A700" : "DD2C00",
-        
-        // Brown
-        "MC_BROWN_50" : "EFEBE9",
-        "MC_BROWN_100" : "D7CCC8",
-        "MC_BROWN_200" : "BCAAA4",
-        "MC_BROWN_300" : "A1887F",
-        "MC_BROWN_400" : "8D6E63",
-        "MC_BROWN_500" : "795548",
-        "MC_BROWN_600" : "6D4C41",
-        "MC_BROWN_700" : "5D4037",
-        "MC_BROWN_800" : "4E342E",
-        "MC_BROWN_900" : "3E2723",
-        
-        // Grey
-        "MC_GREY_50" : "FAFAFA",
-        "MC_GREY_100" : "F5F5F5",
-        "MC_GREY_200" : "EEEEEE",
-        "MC_GREY_300" : "E0E0E0",
-        "MC_GREY_400" : "BDBDBD",
-        "MC_GREY_500" : "9E9E9E",
-        "MC_GREY_600" : "757575",
-        "MC_GREY_700" : "616161",
-        "MC_GREY_800" : "424242",
-        "MC_GREY_900" : "212121",
-        
-        // Blue Grey
-        "MC_BLUE_GREY_50" : "ECEFF1",
-        "MC_BLUE_GREY_100" : "CFD8DC",
-        "MC_BLUE_GREY_200" : "B0BEC5",
-        "MC_BLUE_GREY_300" : "90A4AE",
-        "MC_BLUE_GREY_400" : "78909C",
-        "MC_BLUE_GREY_500" : "607D8B",
-        "MC_BLUE_GREY_600" : "546E7A",
-        "MC_BLUE_GREY_700" : "455A64",
-        "MC_BLUE_GREY_800" : "37474F",
-        "MC_BLUE_GREY_900" : "263238",
-        
-    ]
 }
